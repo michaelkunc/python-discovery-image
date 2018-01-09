@@ -1,13 +1,10 @@
-#This image creates a python environment suitable for 
-#iteractive data discovery. It includes some useful packages.
-
-#Get my python image
+#Get Python
 FROM python:latest
 
-#Get my requirements
+#Get requirements
 COPY requirements.txt /tmp
 
-#Import script
+#Copy immport script
 COPY import.py /tmp
 
 #Set the WORKDIR
@@ -16,6 +13,5 @@ WORKDIR /tmp
 #Load up the libraries
 RUN pip install -r requirements.txt
 
-#Start it in ipython
+#Start it in iPython
 CMD ipython
-

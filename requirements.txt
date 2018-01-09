@@ -1,5 +1,7 @@
 ipython
 pandas
 requests
+requests-cache
 beautifulsoup4
 genson
+boto3
