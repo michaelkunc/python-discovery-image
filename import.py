@@ -4,3 +4,5 @@ import requests_cache
 import pandas as pd
 from bs4 import BeautifulSoup
 import genson
+import boto3
+import botocore
